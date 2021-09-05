@@ -36,5 +36,26 @@ public class Stack {
 		
 		}
 	}
+	//method for peek
+	public int peek() throws Exception {
+		if (this.head == null) {
+			System.out.println("Stack Is Empty");
+			throw new Exception("Stack Is Empty ");
+		}
+			return this.head.data;
+		}
+	//method for pop
+	public int pop() throws Exception{
+		if(this.head==null) {
+			System.out.println("Stack Is Empty");
+			throw new Exception("Stack Is Empty");
+		}
+		//we need to pop the top most element
+		Node temp = head ;
+		this.head=this.head.next;
+		return temp.data;
+			
+	}
+	}
 
-}
+
