@@ -20,7 +20,14 @@ public class Test {
 
 		stack.display();
 
-
+       Queue<Integer>queue= new Queue();
+       queue.enqueue(56);
+       queue.enqueue(30);
+       queue.enqueue(70);
+       
+       System.out.println("Size Of The Queue:"+queue.size());
+       System.out.println("An Item Dequeue:"+queue.dequeue());  //removing an item front
+       
 	} 
 
 }
